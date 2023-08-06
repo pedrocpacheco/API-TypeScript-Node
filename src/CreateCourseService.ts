@@ -4,9 +4,16 @@
  * duration - Number
  * educator - String
  */
+
+interface Course {
+    name: string,
+    duration: number,
+    educator: string
+}
+
 class CreateCourseService {
 
-    execute(name: String, duration: Number, educator: String){
+    execute({ name, duration, educator }:Course){
         console.log(name, duration, educator);
     }
 
