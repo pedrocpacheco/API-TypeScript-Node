@@ -11,3 +11,4 @@ export function createCourse(req: Request, res: Response) {
 
     return res.send();
 }
+
