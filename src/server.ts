@@ -1,11 +1,10 @@
 import express from "express";
+import { createCourse } from "./routes";
 
 const app = express();
                     // ? Nome
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-    res.json( { message: "Hello World!" } );
-});
+app.get("/", createCourse);
 
 app.listen(PORT, () => console.log(`Server Running at PORT: ${PORT}`) );

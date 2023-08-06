@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * name - string
+ * duration - Number
+ * educator - String
+ */
+class CreateCourseService {
+    execute(name, duration, educator) {
+        console.log(name, duration, educator);
+    }
+}
+exports.default = new CreateCourseService();
